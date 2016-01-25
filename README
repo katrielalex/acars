@@ -1,0 +1,11 @@
+This repo contains an initial TAMARIN model for the secure ACARS
+protocol in the above-linked patent. The idea is to see whether it
+actually meets its guarantees, or even to decide what those guarantees
+are.
+
+If you didn't write the Makefile it probably won't work for you. The
+rough instructions are:
+
+  - `m4 secure_ACARS.m4 > proto.spthy`
+  - run the Tamarin prover on `proto.spthy` however you like
+
